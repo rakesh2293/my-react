@@ -1,15 +1,43 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-const parent =React.createElement("div",
-    {id:"parent"},
-    [
-        React.createElement("div",{id:"child1"},
-            [React.createElement("h1",{},"I'm an H1 Tag"),React.createElement("h2",{},"I'm an H2 Tag")]),
-        React.createElement("div",{id:"child2"},
-            [React.createElement("h1",{},"I'm an H1 Tag"),React.createElement("h2",{},"I'm an H2 Tag")])
-    ]
+// React Element
+// const heading = React.createElement("h1",{id:"heading"},"My React Element"); 
+
+// JSK React ( Transplied before it reaches the JS engine) => PARCEL - Babel
+
+// JSK => Babel Transplied it to React.createElement => ReactElement-JS Object => HTMLELement(render)
+const jsxHeading =(<h1 id="heading" className="head">My React in JSX </h1>)
+
+// React Component
+// Class Based Components - OLD
+// Functional Components - NEW
+//React Functional Component
+
+const TileComponent = () => {
+    return <h1>Here is Tile Functional Component</h1>
+}
+
+
+const title = (
+    <h1>Here is Tile Element</h1>
 )
-// To Overcome above Complex code we introduce JSX
-const root = ReactDOM.createRoot(document.getElementById("root"))
-root.render(parent)
+
+
+// Below is the Component Composition works 
+const HeadingComponent =() => {
+    return (<div id="container">
+        <TileComponent/> 
+        <h2>{100+200}</h2>
+        {title}
+        <h1>My React in JSX</h1>
+        </div>)
+}
+
+
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
+root.render(<HeadingComponent />)
+
+
