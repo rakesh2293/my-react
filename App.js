@@ -7,7 +7,7 @@ import ReactDOM from "react-dom/client";
 // JSK React ( Transplied before it reaches the JS engine) => PARCEL - Babel
 
 // JSK => Babel Transplied it to React.createElement => ReactElement-JS Object => HTMLELement(render)
-const jsxHeading =(<h1 id="heading" className="head">My React in JSX </h1>)
+const jsxHeading =(<h1 className="heading">My React in JSX </h1>)
 
 // React Component
 // Class Based Components - OLD
@@ -15,7 +15,7 @@ const jsxHeading =(<h1 id="heading" className="head">My React in JSX </h1>)
 //React Functional Component
 
 const TileComponent = () => {
-    return <h1>Here is Tile Functional Component</h1>
+    return <h1 className="heading">Here is Tile Functional Component</h1>
 }
 
 
