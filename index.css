@@ -18,16 +18,15 @@
 }
 
 .nav-items > ul >li {
-    padding: 5px;
+    padding: 20px;
     list-style: none;
     font-size:24px;
 }
 
-.search-input {
+.filter-button {
     border: 1px solid blue;
-    height: 40px;
-    text-align: center;
-    padding-top: 10px;
+    height: 20px;
+    padding: 10px;
 }
 
 .res-conatiner {
@@ -41,7 +40,7 @@
     width: 250px;
     padding: 10px;
     margin:10px;
-    border: 1px solid #bababa;
+    background-color: #e0e0e0;
 }
 
 .card-detail:hover {
