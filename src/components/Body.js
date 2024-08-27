@@ -5,7 +5,6 @@ import { useEffect, useState } from "react";
 const Body = () => {
   const [listOfRestuarnts, setListOfResturant] = useState([]);
   const [filterResturants, setfilterResturants] =useState([])
-  // https://www.swiggy.com/dapi/restaurants/list/v5?lat=21.99740&lng=79.00110&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING
   useEffect(() => {
     fetchData();
   }, []);
@@ -40,7 +39,7 @@ const Body = () => {
             const filterList = listOfRestuarnts.filter(
               (res) => res.info.avgRating > 4.2
             );
-            setListOfResturant(filterList);
+            setfilterResturants(filterList);
           }}
         >
           Top Rated Resturant
