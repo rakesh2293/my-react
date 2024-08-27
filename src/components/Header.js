@@ -13,7 +13,7 @@ const Header = () => {
           <li>About Us</li>
           <li>Contact US</li>
           <li>Cart</li>
-          <button class="login" type="button" onClick={() => {
+          <button className="login" type="button" onClick={() => {
             btnName === "Login" ? setbtnName("LogOut") : setbtnName("Login")
           }}>{btnName}</button>
         </ul>
