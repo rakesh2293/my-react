@@ -1,4 +1,9 @@
-.res-header {
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* .res-header {
     border: 1px solid black;
     display: flex;
     justify-content: space-between;
@@ -75,4 +80,4 @@
 }
 .res-menu-check {
     color:red
-}
+} */
