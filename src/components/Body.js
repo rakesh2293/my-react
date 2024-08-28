@@ -14,12 +14,11 @@ const Body = () => {
   const fetchData = async () => {
     const response = await fetch(CARD_URL);
     const json = await response.json();
-    console.log('---json--', json)
     setListOfResturant(
-      json.data.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants
+      json.data.cards[3]?.card?.card?.gridElements?.infoWithStyle?.restaurants
     );
     setfilterResturants(
-      json.data.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants
+      json.data.cards[3]?.card?.card?.gridElements?.infoWithStyle?.restaurants
     );
   };
   const onlineStatus = useOnlineStatus();
